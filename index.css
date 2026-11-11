@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #ffffff;
+  --bg-surface: #f6f8fa;
+  --bg-surface-hover: #eaeef2;
+  --border-color: #d0d7de;
+  --text-primary: #24292f;
+  --text-secondary: #57606a;
+  --text-heading: #1c2128;
+  --accent-green: #1a7f37;
+  --accent-blue: #0969da;
+  --accent-purple: #8250df;
+  --accent-amber: #9a6700;
+  --accent-red: #cf222e;
+}
+.dark {
+  --bg-color: #0d1117;
+  --bg-surface: #161b22;
+  --bg-surface-hover: #21262d;
+  --border-color: #30363d;
+  --text-primary: #c9d1d9;
+  --text-secondary: #8b949e;
+  --text-heading: #ffffff;
+  --accent-green: #7ee787;
+  --accent-blue: #79c0ff;
+  --accent-purple: #d2a8ff;
+  --accent-amber: #e3b341;
+  --accent-red: #ff7b72;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.font-mono {
+  font-family: 'Fira Code', monospace;
+}
+
+.bg-grid {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(128, 128, 128, 0.1) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(128, 128, 128, 0.1) 1px, transparent 1px);
+}
+.dark .bg-grid {
+  background-image: linear-gradient(to right, rgba(48, 54, 61, 0.2) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(48, 54, 61, 0.2) 1px, transparent 1px);
+}
+
+.glass-panel {
+  background: rgba(246, 248, 250, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+}
+.dark .glass-panel {
+  background: rgba(22, 27, 34, 0.7);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.font-mono {
+  font-family: 'Fira Code', monospace;
+}
+.bg-grid {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(128, 128, 128, 0.1) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(128, 128, 128, 0.1) 1px, transparent 1px);
+}
+.dark .bg-grid {
+  background-image: linear-gradient(to right, rgba(48, 54, 61, 0.2) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(48, 54, 61, 0.2) 1px, transparent 1px);
+}
+.glass-panel {
+  background: rgba(246, 248, 250, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+}
+.dark .glass-panel {
+  background: rgba(22, 27, 34, 0.7);
+}
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
